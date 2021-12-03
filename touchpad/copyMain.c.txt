@@ -1,0 +1,102 @@
+#include ".\lcd_lib\Open1768_LCD.h"
+#include ".\lcd_lib\LCD_ILI9325.h"
+#include ".\lcd_lib\asciiLib.h"
+#include ".\tp_lib\TP_Open1768.h"
+#include "PIN_LPC17xx.h"                // Keil::Device:PIN
+#include "GPIO_LPC17xx.h"               // Keil::Device:GPIO
+
+const int maxXTP = 4095;
+const int maxYTP = 3930;
+const int maxXlcd = 240;
+const int maxYlcd = 320;
+
+int toTPlcdPositionX(int x){
+	return (maxXlcd * x/maxXTP);
+}
+
+int toTPlcdPositionY(int y){
+	return (maxYlcd * y/maxYTP);
+}
+
+
+void printOnLED(char string[], int len){
+	for(int k = 0; k < len; k++){
+		char letter = string[k];
+		unsigned char pbuffer[16];
+		GetASCIICode(0, pbuffer, letter);
+		for(int i = 0; i < 16; i++){
+			unsigned int value = pbuffer[i];
+			for(int j = 0; j < 8; j++){
+					lcdWriteIndex(ADRX_RAM);
+					lcdWriteData(240 - i);
+					lcdWriteIndex(ADRY_RAM);
+					lcdWriteData(((7 - j) + 16 * k));
+					lcdWriteIndex(DATA_RAM);
+				if(value & 1 << j){
+					lcdWriteData(LCDWhite);
+				}else{
+					lcdWriteData(LCDBlack);
+				}
+			}
+		}
+	}
+}
+
+int main(){
+	
+	
+	
+	// GPIOINT for touch LCD
+	NVIC_ClearPendingIRQ(EINT3_IRQn);
+	PIN_Configure(0, 19, 0, 0, 0); 
+	LPC_GPIOINT->IO0IntEnF = (1 << 19);
+	NVIC_EnableIRQ(EINT3_IRQn);
+	
+		// LCD
+	lcdConfiguration();
+
+	
+	lcdWriteIndex(ADRX_RAM);
+	lcdWriteData(100);
+	lcdWriteIndex(ADRY_RAM);
+	lcdWriteData(100);
+	lcdWriteIndex(DATA_RAM);
+	
+	for(int i = 0; i < 240; i++){
+		for( int j = 0; j < 320; j++){
+			lcdWriteData(LCDRed);
+		}
+	}
+	
+	//touch pad init
+	touchpanelInit();
+	
+	
+	while(1){
+		
+		float xAvg = 0;
+		float yAvg = 0;
+		int sampleAmount = 100;
+		for(int i = 0; i < sampleAmount; i++){
+			int x = 0;
+			int y = 0;
+			touchpanelGetXY(&y, &x);
+			xAvg += x;
+			yAvg += y;
+		}
+		
+		xAvg /= sampleAmount;
+		yAvg /= sampleAmount;
+		
+		
+		int xlcdPosition = toTPlcdPositionX(xAvg);
+		int ylcdPosition = toTPlcdPositionY(yAvg); //240 * yAvg/maxYTP;
+		
+		char position[30] = "";
+		sprintf(position, "x=%4d, y=%4d", xlcdPosition, ylcdPosition);
+		int positionLen = strlen(position);
+		
+		printOnLED(position, positionLen);
+		
+	}
+}

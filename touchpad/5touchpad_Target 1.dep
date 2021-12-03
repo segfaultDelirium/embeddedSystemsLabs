@@ -1,0 +1,89 @@
+Dependencies for Project '5touchpad', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x61A12960)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\PIN_LPC17xx.h)(0x5D5BE3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x602585EC)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\GPIO_LPC17xx.h)(0x5D5BE3CA)
+I (.\lcd_lib\Open1768_LCD.h)(0x61A1263E)
+I (.\lcd_lib\LCD_ILI9325.h)(0x61A1263E)
+I (.\lcd_lib\asciiLib.h)(0x61A1263E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602585EE)
+I (.\tp_lib\TP_Open1768.h)(0x61A1263E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602585E4)
+F (.\tp_lib\TP_Open1768.c)(0x61A1263E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\tp_open1768.o --omf_browse .\tp_open1768.crf --depend .\tp_open1768.d)
+I (tp_lib\TP_Open1768.h)(0x61A1263E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\lpc17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602585E4)
+F (.\lcd_lib\Open1768_LCD.c)(0x61A1263E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\open1768_lcd.o --omf_browse .\open1768_lcd.crf --depend .\open1768_lcd.d)
+I (lcd_lib\Open1768_LCD.h)(0x61A1263E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x602585E4)
+I (lcd_lib\LCD_ILI9325.h)(0x61A1263E)
+F (.\lcd_lib\LCD_ILI9325.c)(0x61A1263E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\lcd_ili9325.o --omf_browse .\lcd_ili9325.crf --depend .\lcd_ili9325.d)
+I (lcd_lib\LCD_ILI9325.h)(0x61A1263E)
+I (lcd_lib\Open1768_LCD.h)(0x61A1263E)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+F (.\lcd_lib\asciiLib.c)(0x61A1263E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\asciilib.o --omf_browse .\asciilib.crf --depend .\asciilib.d)
+I (lcd_lib\asciiLib.h)(0x61A1263E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x602585EE)
+F (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\GPIO_LPC17xx.c)(0x5D5BE3CA)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\gpio_lpc17xx.o --omf_browse .\gpio_lpc17xx.crf --depend .\gpio_lpc17xx.d)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\GPIO_LPC17xx.h)(0x5D5BE3CA)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+F (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\PIN_LPC17xx.c)(0x5D5BE3CA)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\pin_lpc17xx.o --omf_browse .\pin_lpc17xx.crf --depend .\pin_lpc17xx.d)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver\PIN_LPC17xx.h)(0x5D5BE3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x602585EC)
+F (RTE\Device\LPC1768\RTE_Device.h)(0x61A1263E)()
+F (RTE\Device\LPC1768\startup_LPC17xx.s)(0x61A1263E)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "LPC175x_6x SETA 1" --pd "_RTE_ SETA 1"--list .\startup_lpc17xx.lst --xref -o .\startup_lpc17xx.o --depend .\startup_lpc17xx.d)
+F (RTE\Device\LPC1768\system_LPC17xx.c)(0x61A1263E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\LPC1768-I.\RTE\_Target_1-IC:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include-IC:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\RTE_Driver-D__UVISION_VERSION="536" -D_RTE_ -DLPC175x_6x -D_RTE_ -DLCD_ILI9325-o .\system_lpc17xx.o --omf_browse .\system_lpc17xx.crf --depend .\system_lpc17xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602585EE)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\LPC17xx.h)(0x58494DA2)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h)(0x60D44B52)
+I (C:\Users\user\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.1\Device\Include\system_LPC17xx.h)(0x58494DA2)

@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+".\main.o"
+".\tp_open1768.o"
+".\open1768_lcd.o"
+".\lcd_ili9325.o"
+".\asciilib.o"
+".\gpio_lpc17xx.o"
+".\pin_lpc17xx.o"
+".\startup_lpc17xx.o"
+".\system_lpc17xx.o"
+--strict --scatter ".\5touchpad.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\5touchpad.map" -o .\5touchpad.axf
